@@ -24,19 +24,22 @@ class EnhancedForInst {
 		}
 
 		for (Number e : arr) {
-			System.out.print(e.getNum()+" ");
+			System.out.print(e.getNum()+" "); // 3 5 9
 		}
 
 		System.out.println("");
+
 		for (Number e : arr) {
 			e = new Number(5);
 			e.num+=2;
-			System.out.print(e.getNum()+" ");
+			System.out.print(e.getNum()+" "); // 7 7 7
 		}
 
 		System.out.println("");
+
+		// 배열의 참조변수를 위해 선언된 변수 e는 for-each문 내에서만 유효하다.
 		for (Number e : arr) {
-			System.out.print(e.getNum()+" ");
+			System.out.print(e.getNum()+" "); // 3 5 9
 		}
 	}
 }
