@@ -23,9 +23,10 @@ class StaticInheritance {
 		ad.add(1);
 		af.friendAdd(3);
 		AdderFriend.val += 5;
+		af.showVal();
 
 	}
 
-	.......
+
 
 }
